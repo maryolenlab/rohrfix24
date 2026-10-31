@@ -4,7 +4,7 @@ Responsive portfolio website for a fictional German plumbing and heating company
 
 ## Live Demo
 
-[View the existing published demo](https://marinaolenchenko.github.io/plumber/)
+[View the existing published demo]([https://marinaolenchenko.github.io/plumber/](https://maryolenlab.github.io/rohrfix24/))
 
 This link points to the earlier deployment. The safe demo interactions and legal pages in this copy may differ until a new version is published.
 
