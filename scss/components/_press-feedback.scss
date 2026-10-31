@@ -1,0 +1,29 @@
+@keyframes press-feedback {
+  from {
+    scale: 1;
+    filter: brightness(1);
+  }
+
+  to {
+    scale: var(--interaction-press-scale);
+    filter: brightness(var(--interaction-press-brightness));
+  }
+}
+
+.skip-link:active,
+.brand:active,
+.navigation__link:active,
+.phone-link:active,
+.button:not(:disabled):active,
+.menu-toggle:active,
+.process-step--interactive:active,
+.text-link:active,
+.contact-list__link:active,
+.checkbox-field__link:active,
+.social-links__link:active,
+.footer-group__link:active,
+.footer-legal__link:active,
+.submission-dialog__close:active,
+.scroll-top:active {
+  animation: press-feedback var(--transition-standard) both;
+}

@@ -1,0 +1,61 @@
+.contact-list {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  font-style: normal;
+}
+
+.contact-list__item {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: var(--space-11) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-3);
+}
+
+.contact-list__icon-box {
+  color: var(--color-primary);
+}
+
+.contact-list__content {
+  min-width: 0;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.contact-list__label {
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.contact-list__link,
+.contact-list__value {
+  min-width: 0;
+  min-height: var(--space-11);
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.contact-list__link {
+  width: max-content;
+  max-width: 100%;
+  transition: color var(--transition-standard);
+}
+
+.contact-list__link:hover,
+.contact-list__link:focus-visible {
+  color: var(--color-primary);
+}
+
+.contact-list__link--multiline {
+  display: grid;
+  align-content: center;
+}

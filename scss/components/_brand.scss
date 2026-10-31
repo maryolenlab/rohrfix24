@@ -1,0 +1,28 @@
+.brand {
+  width: max-content;
+  max-width: 230px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.brand__name {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: normal;
+}
+
+.brand__accent {
+  color: var(--color-primary);
+}
+
+.brand__tagline {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: normal;
+}

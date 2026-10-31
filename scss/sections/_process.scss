@@ -1,0 +1,24 @@
+.process {
+  padding-top: var(--space-5);
+  background: var(--color-background);
+}
+
+.process__container {
+  display: grid;
+}
+
+.process__header {
+  max-width: 680px;
+}
+
+.process__list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: var(--space-12) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.process__item {
+  min-width: 0;
+}

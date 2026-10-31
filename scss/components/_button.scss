@@ -1,0 +1,103 @@
+.button {
+  --button-icon-shift-x: 0;
+  --button-icon-shift-y: 0;
+
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    color var(--transition-standard),
+    background-color var(--transition-standard),
+    border-color var(--transition-standard),
+    box-shadow var(--transition-standard),
+    transform var(--transition-standard);
+}
+
+.button:hover {
+  --button-icon-shift-y: -1px;
+
+  transform: translateY(-1px);
+}
+
+.button:active {
+  --button-icon-shift-y: 0;
+
+  transform: translateY(0);
+}
+
+.button--primary {
+  color: var(--color-background);
+  background: var(--color-primary);
+  box-shadow: var(--shadow-small);
+}
+
+.button--primary:hover {
+  background: var(--color-primary-hover);
+  box-shadow: 0 8px 20px rgb(217 31 38 / 0.22);
+}
+
+.button--primary:active {
+  background: var(--color-primary-active);
+  box-shadow: var(--shadow-small);
+}
+
+.button--secondary {
+  color: var(--color-text);
+  background: var(--color-background);
+  border-color: var(--color-border);
+}
+
+.button--secondary:hover {
+  color: var(--color-primary);
+  background: var(--color-background-soft);
+  border-color: var(--color-primary);
+}
+
+.button--small {
+  min-height: 44px;
+  padding: 10px 16px;
+}
+
+.button--large {
+  min-height: 48px;
+  padding-inline: 20px;
+}
+
+.button--forward:hover {
+  --button-icon-shift-x: var(--space-1);
+  --button-icon-shift-y: 0;
+}
+
+.button--forward:active {
+  --button-icon-shift-x: 2px;
+}
+
+.button__icon {
+  width: var(--icon-size-medium);
+  height: var(--icon-size-medium);
+  flex-shrink: 0;
+  color: currentcolor;
+  transform: translate(var(--button-icon-shift-x), var(--button-icon-shift-y));
+  transition: transform var(--transition-standard);
+}
+
+.button:disabled {
+  --button-icon-shift-x: 0;
+  --button-icon-shift-y: 0;
+
+  color: var(--color-text-muted);
+  background: var(--color-border-light);
+  border-color: var(--color-border);
+  box-shadow: none;
+  opacity: 0.72;
+  transform: none;
+}

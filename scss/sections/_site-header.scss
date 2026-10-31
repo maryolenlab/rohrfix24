@@ -1,0 +1,40 @@
+.site-header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.site-header__container {
+  min-height: var(--header-height);
+  display: grid;
+  grid-template-columns: minmax(200px, 230px) minmax(0, 1fr) max-content;
+  align-items: center;
+  column-gap: var(--space-6);
+}
+
+.site-header__brand {
+  justify-self: start;
+}
+
+.site-header__navigation {
+  justify-self: stretch;
+}
+
+.site-header__actions {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  column-gap: var(--space-6);
+  white-space: nowrap;
+}
+
+.site-header__phone,
+.site-header__button {
+  justify-self: end;
+}
+
+.site-header__phone {
+  gap: var(--space-3);
+}

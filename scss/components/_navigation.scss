@@ -1,0 +1,31 @@
+.navigation {
+  min-width: 0;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 1.1vw, 24px);
+}
+
+.navigation__link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: normal;
+  white-space: nowrap;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+  transition: color var(--transition-standard);
+}
+
+.navigation__link:hover,
+.navigation__link:focus-visible {
+  color: var(--color-primary);
+}

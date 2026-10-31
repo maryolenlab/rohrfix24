@@ -1,0 +1,24 @@
+.services {
+  background: var(--color-background);
+}
+
+.services__container {
+  display: grid;
+}
+
+.services__header {
+  max-width: 760px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-10);
+}
+
+.services__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-8);
+}

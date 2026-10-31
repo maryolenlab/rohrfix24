@@ -1,0 +1,106 @@
+.phone-link {
+  --phone-icon-rotation: 0deg;
+  --phone-icon-scale: 1;
+
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text);
+  transition: color var(--transition-standard);
+}
+
+.phone-link:hover,
+.phone-link:focus-visible {
+  --phone-icon-rotation: -8deg;
+  --phone-icon-scale: 1.08;
+
+  color: var(--color-primary);
+}
+
+.phone-link__icon {
+  width: var(--icon-size-medium);
+  height: var(--icon-size-medium);
+  display: block;
+  flex-shrink: 0;
+  background-color: currentcolor;
+  -webkit-mask: url("../assets/icons/phone.svg") center / contain no-repeat;
+  mask: url("../assets/icons/phone.svg") center / contain no-repeat;
+  transform: rotate(var(--phone-icon-rotation)) scale(var(--phone-icon-scale));
+  transform-origin: center;
+  transition:
+    background-color var(--transition-standard),
+    transform var(--transition-standard);
+}
+
+.phone-link__icon--large {
+  width: var(--space-8);
+  height: var(--space-8);
+}
+
+.phone-link__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.phone-link__number {
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.phone-link__number--large {
+  font-size: 24px;
+}
+
+.phone-link__label {
+  color: var(--color-primary);
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.phone-link__label--light {
+  color: currentcolor;
+  font-size: 13px;
+}
+
+.phone-link--inverse {
+  min-width: 320px;
+  min-height: 96px;
+  justify-content: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-8);
+  color: var(--color-background);
+  background: var(--color-primary);
+  border-radius: var(--radius-small);
+  box-shadow: var(--shadow-small);
+  transition:
+    color var(--transition-standard),
+    background-color var(--transition-standard),
+    box-shadow var(--transition-standard),
+    transform var(--transition-standard);
+}
+
+.phone-link--inverse:hover,
+.phone-link--inverse:focus-visible {
+  color: var(--color-background);
+  background: var(--color-primary-hover);
+  box-shadow: 0 8px 20px rgb(217 31 38 / 0.22);
+  transform: translateY(-2px);
+}
+
+.phone-link--inverse:active {
+  background: var(--color-primary-active);
+  box-shadow: var(--shadow-small);
+  transform: translateY(0);
+}
+
+.phone-link--light,
+.phone-link--light:hover,
+.phone-link--light:focus-visible {
+  color: var(--color-background);
+}

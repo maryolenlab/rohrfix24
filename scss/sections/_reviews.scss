@@ -1,0 +1,40 @@
+.reviews {
+  padding-block: var(--space-26);
+  background: var(--color-background);
+}
+
+.reviews__container {
+  display: grid;
+}
+
+.reviews__top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: var(--space-8);
+}
+
+.reviews__header {
+  max-width: 680px;
+}
+
+.reviews__link {
+  justify-self: end;
+}
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.reviews__note {
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+}

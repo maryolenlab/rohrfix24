@@ -1,0 +1,14 @@
+node_modules/
+.pnpm-store/
+.sass-cache/
+.audit/
+.playwright-cli/
+output/
+*.map
+*.log
+.env
+.env.*
+!.env.example
+.npmrc
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+.advantages {
+  padding-top: 0;
+  background: var(--color-background);
+}
+
+.advantages__container {
+  display: grid;
+}
+
+.advantages__header {
+  max-width: 680px;
+}
+
+.advantages__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}

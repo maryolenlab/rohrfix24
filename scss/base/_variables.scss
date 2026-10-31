@@ -1,0 +1,64 @@
+:root {
+  --color-primary: #d91f26;
+  --color-primary-hover: #b8161d;
+  --color-primary-active: #971016;
+  --color-accent: #5f7fd6;
+  --color-text: #071735;
+  --color-text-soft: #24324f;
+  --color-text-muted: #52617a;
+  --color-background: #ffffff;
+  --color-background-soft: #f7f9fd;
+  --color-overlay: rgb(7 23 53 / 0.56);
+  --color-border: #d8e0ec;
+  --color-border-light: #edf1f6;
+  --color-focus: #315dd8;
+  --color-rating: #e5ad00;
+  --color-success: #198754;
+
+  --font-primary: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --container-width: 1360px;
+  --container-gutter: 32px;
+  --dialog-max-width: 480px;
+  --grid-gap: 24px;
+  --header-height: 92px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-11: 44px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-18: 72px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-26: 104px;
+  --space-28: 112px;
+
+  --icon-size-small: var(--space-4);
+  --icon-size-medium: var(--space-5);
+  --icon-size-large: var(--space-6);
+  --icon-size-feature: var(--space-8);
+  --icon-size-service: var(--space-9);
+
+  --radius-small: 6px;
+  --radius-medium: 10px;
+  --radius-large: 16px;
+
+  --shadow-small: 0 2px 6px rgb(7 23 53 / 0.08);
+  --shadow-card: 0 16px 40px rgb(7 23 53 / 0.14);
+
+  --z-index-floating: 900;
+
+  --transition-standard: 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --interaction-press-scale: 0.97;
+  --interaction-press-brightness: 0.92;
+}

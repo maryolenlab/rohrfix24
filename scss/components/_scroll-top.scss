@@ -1,0 +1,65 @@
+.scroll-top {
+  --scroll-top-icon-shift: 0;
+
+  position: fixed;
+  z-index: var(--z-index-floating);
+  right: max(
+    var(--container-gutter),
+    calc(((100vw - var(--container-width)) / 2) + var(--space-4))
+  );
+  bottom: var(--space-8);
+  width: var(--space-12);
+  height: var(--space-12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-background);
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  box-shadow: var(--shadow-small);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(var(--space-3));
+  transition:
+    color var(--transition-standard),
+    background-color var(--transition-standard),
+    border-color var(--transition-standard),
+    box-shadow var(--transition-standard),
+    opacity var(--transition-standard),
+    visibility var(--transition-standard),
+    transform var(--transition-standard);
+}
+
+.scroll-top--visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  --scroll-top-icon-shift: -2px;
+
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.scroll-top:active {
+  --scroll-top-icon-shift: 0;
+
+  background: var(--color-primary-active);
+  border-color: var(--color-primary-active);
+  box-shadow: var(--shadow-small);
+  transform: translateY(0);
+}
+
+.scroll-top__icon {
+  width: var(--space-6);
+  height: var(--space-6);
+  transform: translateY(var(--scroll-top-icon-shift));
+  transition: transform var(--transition-standard);
+}

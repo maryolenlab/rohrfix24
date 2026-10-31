@@ -1,0 +1,49 @@
+.icon-box {
+  --icon-box-graphic-size: var(--icon-size-medium);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+}
+
+.icon-box--small {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-box--medium {
+  width: 44px;
+  height: 44px;
+}
+
+.icon-box--large {
+  width: var(--space-16);
+  height: var(--space-16);
+}
+
+.icon-box--xlarge {
+  width: var(--space-18);
+  height: var(--space-18);
+}
+
+.icon-box--primary {
+  color: var(--color-primary);
+  background: rgb(217 31 38 / 0.08);
+  border-color: rgb(217 31 38 / 0.18);
+}
+
+.icon-box--plain {
+  color: var(--color-text);
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.icon-box__icon {
+  width: var(--icon-box-graphic-size);
+  height: var(--icon-box-graphic-size);
+  color: currentcolor;
+}

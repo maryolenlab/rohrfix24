@@ -1,0 +1,39 @@
+.menu-toggle {
+  --menu-toggle-icon-scale: 1;
+
+  width: var(--space-11);
+  height: var(--space-11);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  transition:
+    color var(--transition-standard),
+    background-color var(--transition-standard),
+    border-color var(--transition-standard),
+    transform var(--transition-standard);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  --menu-toggle-icon-scale: 1.06;
+
+  color: var(--color-primary);
+  background: var(--color-background-soft);
+  border-color: var(--color-primary);
+}
+
+.menu-toggle:active {
+  --menu-toggle-icon-scale: 0.96;
+}
+
+.menu-toggle__icon {
+  width: var(--space-6);
+  height: var(--space-6);
+  color: currentcolor;
+  transform: scale(var(--menu-toggle-icon-scale));
+  transition: transform var(--transition-standard);
+}

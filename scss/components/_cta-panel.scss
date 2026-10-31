@@ -1,0 +1,55 @@
+.cta-panel {
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-16);
+  padding: var(--space-10) var(--space-12);
+  color: var(--color-background);
+  background: var(--color-text);
+  border-radius: var(--radius-medium);
+}
+
+.cta-panel__content {
+  min-width: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.cta-panel__eyebrow {
+  color: var(--color-background);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.cta-panel__title {
+  color: var(--color-background);
+  font-size: 34px;
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.cta-panel__description {
+  max-width: 620px;
+  color: var(--color-background);
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: normal;
+  opacity: 0.82;
+}
+
+.cta-panel__contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.cta-panel__phone,
+.cta-panel__button {
+  flex-shrink: 0;
+}

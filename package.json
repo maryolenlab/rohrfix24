@@ -1,0 +1,14 @@
+{
+  "name": "rohrfix24-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
+    "watch:css": "sass scss/main.scss css/main.css --watch --style=compressed --no-source-map",
+    "format:scss": "prettier --write \"scss/**/*.scss\""
+  },
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "sass": "1.102.0"
+  }
+}

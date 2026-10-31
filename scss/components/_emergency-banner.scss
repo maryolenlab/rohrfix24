@@ -1,0 +1,55 @@
+.emergency-banner {
+  min-height: 168px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-12);
+  padding: var(--space-8) var(--space-12);
+  background: var(--color-background-soft);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-medium);
+}
+
+.emergency-banner__intro {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.emergency-banner__icon {
+  --icon-box-graphic-size: var(--icon-size-feature);
+
+  color: var(--color-text);
+  background: var(--color-background);
+  border-color: var(--color-border);
+}
+
+.emergency-banner__content {
+  min-width: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.emergency-banner__title {
+  color: var(--color-text);
+  font-size: 32px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: normal;
+}
+
+.emergency-banner__line {
+  display: block;
+}
+
+.emergency-banner__description {
+  color: var(--color-text-soft);
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: normal;
+}
+
+.emergency-banner__phone {
+  justify-self: end;
+}

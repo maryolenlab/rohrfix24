@@ -1,0 +1,29 @@
+.text-link {
+  --text-link-icon-shift: 0;
+
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: color var(--transition-standard);
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  --text-link-icon-shift: var(--space-1);
+
+  color: var(--color-primary);
+}
+
+.text-link__icon {
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
+  color: currentcolor;
+  transform: translateX(var(--text-link-icon-shift));
+  transition: transform var(--transition-standard);
+}

@@ -1,0 +1,25 @@
+.contact {
+  padding-block: var(--space-28);
+  background: var(--color-background-soft);
+}
+
+.contact__container {
+  align-items: start;
+}
+
+.contact__content {
+  min-width: 0;
+  grid-column: 1 / span 5;
+}
+
+.contact__header {
+  max-width: 520px;
+}
+
+.contact__details {
+  margin-top: var(--space-10);
+}
+
+.contact__form {
+  grid-column: 7 / -1;
+}
